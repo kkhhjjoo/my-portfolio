@@ -58,6 +58,11 @@ button:focus {
     text-align: center;
 }
 
+.max-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
 .title {
     font-size: 2.5rem;
     margin: 1rem 0;
@@ -67,10 +72,6 @@ button:focus {
     margin: 0.5rem 0;
 }
 
-i {
-    color: #fff;
-    font-size: 32px;
-}
 
 /* Header */
 .header {
@@ -148,6 +149,53 @@ i {
     outline: 1px solid var(--color-accent);
     color: var(--color-text);
 } 
+
+/* About */
+#about {
+    .majors {
+        margin: 2.5rem 0;
+    }
+    .major {
+        cursor: default;
+        box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    }
+    .major__icon {
+        font-size: 4rem;
+        margin: 1rem 0;
+        color: var(--color-accent);
+        transition: all 300ms ease;
+    }
+
+    .major__title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+    }
+
+    .major:hover .major__icon {
+        transform: rotate(-15deg) scale(1.2);
+    }
+
+    /* jobs */
+    .jobs {
+        /* text-align: start; */
+    }
+    .job {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 1rem;
+    }
+    .job__name {
+        color: var(--color-primary);
+    }
+    .job__period {
+        color: var(--color-primary);
+        font-size: 0.8rem;
+    }
+}
 
 aside i {
     color: black;

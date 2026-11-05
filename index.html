@@ -46,33 +46,30 @@
             <a class="home__contact" href="#contact">Contact Me</a>
         </section>
         <!-- About -->
-        <section id="about" class="section">
+        <section id="about" class="section max-container">
             <h2 class="title">About me</h2>
             <p class="description">꾸준히 노력하는 개발자입니다.</p>
-            <div style="display: flex; gap: 10px; justify-content: center;">
-                <div style="background-color: black; padding: 16px; color: white; border-radius: 20px;">
-                    <i class="fa-brands fa-html5"></i>
-                    <h3 style="font-weight: bold;">Front-end</h3>
+            <div class="majors" style="display: flex; gap: 30px; justify-content: center;">
+                <div class="major" style="background-color: black; padding: 16px; color: white; border-radius: 20px;">
+                    <i class="fa-brands fa-html5 major__icon"></i>
+                    <h3 class="major__title" style="font-weight: bold;">Front-end</h3>
                     <p>HTML, CSS, JavaScript,TypeScript,<br /> React, Web APIs</p>
                 </div>
-                <div style="background-color: black; padding: 16px; color: white; border-radius: 20px;">
-                    <i class="fa-solid fa-server"></i>
-                    <h3 style="font-weight: bold;">Backend</h3>
+                <div class="major" style="background-color: black; padding: 16px; color: white; border-radius: 20px;">
+                    <i class="fa-solid fa-server major__icon"></i>
+                    <h3 class="major__title" style="font-weight: bold;">Backend</h3>
                     <p>Java, NodeJS, Spring Boot</p>
                 </div>
             </div>
-            <ul>
-                <li>
-                    <div>
-                        <p>2025.8 ~ 2026.2</p>
-                        <p>멋쟁이사자처럼 프론트엔드 부트캠프</p>
-                    </div>
-                    <div>
-                        <p>2026.6 ~ 2026.8</p>
-                        <p>코드잇 단기 심화 부트캠프</p>
-                    </div>
+            <ul class="jobs">
+                <li class="job">
+                    <p class="job__period">2025.8 ~ 2026.2</p>
+                    <p class="job__name">멋쟁이사자처럼 프론트엔드 부트캠프</p>
                 </li>
-                <li></li>
+                <li class="job">
+                    <p class="job__period">2026.6 ~ 2026.8</p>
+                    <p class="job__name">코드잇 단기 심화 부트캠프</p>
+                </li>
             </ul>
         </section>
         <!-- Skills -->
