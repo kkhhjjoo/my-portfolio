@@ -1,0 +1,14 @@
+section {
+    text-align: center;
+}
+
+i {
+    color: #fff;
+    font-size: 32px;
+}
+aside i {
+    color: black;
+}
+footer i {
+    color: black
+}
