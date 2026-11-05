@@ -141,53 +141,55 @@
         </section>
         <!-- Work -->
         <section id="work" class="section">
-            <h2 class="title">My work</h2>
-            <p class="description">프로젝트</p>
-            <ul>
-                <li><button>All <span>5</span></button></li>
-                <li><button>Front-end<span>4</span></button></li>
-                <li><button>Back-end<span>1</span></button></li>
-            </ul>
-            <ul>
-                <li><a href="#" target="_blank">
-                    <img src="images/moa.png" alt="모아 프로젝트">
-                    <div>
-                        <h3>Moa</h3>
-                        <p>팀 프로젝트(4인)로 다양한 취미 모임을 탐색하고 참여할 수 있는 React 기반 웹 서비스를 개발했습니다. API 데이터를 기반으로 목록·상세 페이지를 구성하고, Zustand로 북마크 및 참여 상태를
-                      관리했습니다. 컴포넌트 재사용과 CSS Modules를 적용해 유지보수성을 고려했습니다.</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/sync.png" alt="모아 프로젝트">
-                    <div>
-                        <h3>Sync</h3>
-                        <p>팀 프로젝트로 사용자가 플레이리스트를 생성하고 음악을 공유하며, 다른 사용자와 소통할 수 있는 음악 공유 플랫폼을 개발했습니다. Next.js App Router 기반 BFF 구조와 HttpOnly Cookie 인증, TanStack Query와 Zustand를 활용한 서버·클라이언트 상태 관리를 적용했습니다.</p>             </p>
-                    </div>
-                </a></li>
-                
-                <li><a href="#" target="_blank">
-                    <img src="images/brunch.png" alt="브런치 프로젝트">
-                    <div>
-                        <h3>Brunch</h3>
-                        <p>4인 팀 프로젝트로 진행한 브런치 클론 웹 서비스입니다.
-                      사용자가 게시글을 작성·조회·수정·삭제하고 프로필을 관리할 수 있도록 JavaScript와 TypeScript를 활용해 DOM 기반 UI와 CRUD 기능을 구현했습니다.</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/weather.png" alt="모아 프로젝트">
-                    <div>
-                        <h3>Weather webapp</h3>
-                        <p>개인프로젝트로 사용자 입력을 기반으로 외부 API 데이터를 비동기로 요청하고, 로딩·성공·에러 상태를 분리해 안정적인 사용자 경험을 제공하도록 구현했습니다. 또한 컴포넌트 분리와 상태 관리 구조를 통해 유지보수성과 확장성을 고려했습니다.</p>
-                    </div>
-                </a></li>
-                <li><a href="#" target="_blank">
-                    <img src="images/dasin.png" alt="다신샵 프로젝트">
-                    <div>
-                        <h3>dasin shop</h3>
-                        <p>개인 프로젝트로 진행한 React 기반 E-commerce 웹 애플리케이션입니다. 상품 조회, 검색, 필터링, 장바구니 등 쇼핑몰의 핵심 기능을 구현했습니다. React 상태 관리를 활용하여 상품 데이터와 장바구니 데이터를 관리했으며, 사용자 행동에 따라 화면이 즉시 변경되도록 조건부 렌더링을 적용했습니다. 또한 사용자가 원하는 상품을 빠르게 찾을 수 있도록 검색 및 필터 기능을 구현하여 탐색 경험을 개선했습니다. 데이터는 상위 컴포넌트에서 관리하고 하위 컴포넌트로 전달하는 구조를 적용하여 데이터 흐름을 명확하게 설계했습니다.</p>
-                    </div>
-                </a></li>
-            </ul>
+            <div class="max-container">
+                <h2 class="title">My work</h2>
+                <p class="description">프로젝트</p>
+                <ul class="categories">
+                    <li><button class="category category--selected">All <span class="category__count">5</span></button></li>
+                    <li><button class="category">Front-end<span class="category__count">4</span></button></li>
+                    <li><button class="category">Back-end<span class="category__count">1</span></button></li>
+                </ul>
+                <ul>
+                    <li class="project__item"><a href="#" target="_blank">
+                        <img class="project__img" src="images/moa.png" alt="모아 프로젝트">
+                        <div>
+                            <h3>Moa</h3>
+                            <p>팀 프로젝트(4인)로 다양한 취미 모임을 탐색하고 참여할 수 있는 React 기반 웹 서비스를 개발했습니다. API 데이터를 기반으로 목록·상세 페이지를 구성하고, Zustand로 북마크 및 참여 상태를
+                        관리했습니다. 컴포넌트 재사용과 CSS Modules를 적용해 유지보수성을 고려했습니다.</p>
+                        </div>
+                    </a></li>
+                    <li class="project__item"><a href="#" target="_blank">
+                        <img class="project__img" src="images/sync.png" alt="모아 프로젝트">
+                        <div>
+                            <h3>Sync</h3>
+                            <p>팀 프로젝트로 사용자가 플레이리스트를 생성하고 음악을 공유하며, 다른 사용자와 소통할 수 있는 음악 공유 플랫폼을 개발했습니다. Next.js App Router 기반 BFF 구조와 HttpOnly Cookie 인증, TanStack Query와 Zustand를 활용한 서버·클라이언트 상태 관리를 적용했습니다.</p>             </p>
+                        </div>
+                    </a></li>
+                    
+                    <li class="project__item"><a href="#" target="_blank">
+                        <img class="project__img" src="images/brunch.png" alt="브런치 프로젝트">
+                        <div>
+                            <h3>Brunch</h3>
+                            <p>4인 팀 프로젝트로 진행한 브런치 클론 웹 서비스입니다.
+                        사용자가 게시글을 작성·조회·수정·삭제하고 프로필을 관리할 수 있도록 JavaScript와 TypeScript를 활용해 DOM 기반 UI와 CRUD 기능을 구현했습니다.</p>
+                        </div>
+                    </a></li>
+                    <li class="project__item"><a href="#" target="_blank">
+                        <img class="project__img" src="images/weather.png" alt="모아 프로젝트">
+                        <div>
+                            <h3>Weather webapp</h3>
+                            <p>개인프로젝트로 사용자 입력을 기반으로 외부 API 데이터를 비동기로 요청하고, 로딩·성공·에러 상태를 분리해 안정적인 사용자 경험을 제공하도록 구현했습니다. 또한 컴포넌트 분리와 상태 관리 구조를 통해 유지보수성과 확장성을 고려했습니다.</p>
+                        </div>
+                    </a></li>
+                    <li class="project__item"><a href="#" target="_blank">
+                        <img class="project__img" src="images/dasin.png" alt="다신샵 프로젝트">
+                        <div>
+                            <h3>dasin shop</h3>
+                            <p>개인 프로젝트로 진행한 React 기반 E-commerce 웹 애플리케이션입니다. 상품 조회, 검색, 필터링, 장바구니 등 쇼핑몰의 핵심 기능을 구현했습니다. React 상태 관리를 활용하여 상품 데이터와 장바구니 데이터를 관리했으며, 사용자 행동에 따라 화면이 즉시 변경되도록 조건부 렌더링을 적용했습니다. 또한 사용자가 원하는 상품을 빠르게 찾을 수 있도록 검색 및 필터 기능을 구현하여 탐색 경험을 개선했습니다. 데이터는 상위 컴포넌트에서 관리하고 하위 컴포넌트로 전달하는 구조를 적용하여 데이터 흐름을 명확하게 설계했습니다.</p>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
         </section>
         <!-- Arrow up -->
         <aside>
