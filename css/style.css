@@ -26,6 +26,7 @@
 }
 body {
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 h1, h2, h3, p, ul {
@@ -60,6 +61,42 @@ i {
     color: #fff;
     font-size: 32px;
 }
+
+/* Header */
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-black);
+}
+
+.header__logo__title {
+    font-size: 1.8rem;
+}
+
+.header__menu {
+    display: flex;
+    gap: 10px;
+}
+
+.header__menu__item {
+    padding: 8px;
+}
+
+.header__menu__item:hover {
+    border-bottom: 1px solid var(--color-accent);
+}
+
+.header__menu__item.active {
+    border: 1px solid var(--color-accent);
+    border-radius: 4px;
+}
+
 aside i {
     color: black;
 }
