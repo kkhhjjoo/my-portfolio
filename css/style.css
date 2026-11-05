@@ -73,6 +73,7 @@ button:focus {
 }
 
 
+
 /* Header */
 .header {
     position: fixed;
@@ -309,13 +310,99 @@ button:focus {
     top: 0;
     transform: translateY(3px);
 }
-.project__item a{
-    display: flex;
-    flex-direction: row-reverse;
+.projects {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 3fr));
+    grid-template-rows: repeat(0, 2fr);
+    gap: 2rem;
+    align-items: center;
 }
 
+.project__item {
+    position: relative;
+}
 .project__img {
-    width: 500px;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.project__metadata {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-black);
+    opacity: 0;
+    transition: all 250ms ease-in;
+    transform: translateY(-10px);
+}
+.project__metadata:hover {
+    opacity: 0.8;
+    transform: translateY(0px);
+}
+.project__metadata__title::after {
+    content: '';
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 2px;
+    background: var(--color-accent);
+}
+
+
+
+/* Project Modal */
+.project-modal {
+    width: min(90vw, 700px);
+    max-height: 90vh;
+    padding: 0;
+    border: 1px solid var(--color-accent);
+    border-radius: 8px;
+    background: var(--color-primary-variant);
+    color: var(--color-text);
+}
+
+.project-modal::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.project-modal__content {
+    position: relative;
+    padding: 2rem;
+}
+
+.project-modal__close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    color: var(--color-text);
+    cursor: pointer;
+}
+
+.project-modal__img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.project-modal__title {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+}
+
+.project-modal__description {
+    line-height: 1.6;
 }
 
 aside i {
