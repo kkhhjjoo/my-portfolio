@@ -151,12 +151,12 @@
                 <h2 class="title">My work</h2>
                 <p class="description">프로젝트</p>
                 <ul class="categories">
-                    <li><button class="category category--selected">All <span class="category__count">5</span></button></li>
-                    <li><button class="category">Front-end<span class="category__count">4</span></button></li>
-                    <li><button class="category">Back-end<span class="category__count">1</span></button></li>
+                    <li><button class="category category--selected" data-category="all">All <span class="category__count">5</span></button></li>
+                    <li><button class="category" data-category="front-end">Front-end<span class="category__count">4</span></button></li>
+                    <li><button class="category" data-category="back-end">Back-end<span class="category__count">1</span></button></li>
                 </ul>
                 <ul class="projects">
-                    <li class="project__item">
+                    <li class="project__item" data-type="front-end">
                         <img class="project__img" src="images/moa.png" alt="모아 프로젝트">
                         <div class="project__metadata">
                             <h3 class="project__metadata__title">Moa</h3>
@@ -172,7 +172,7 @@
                         관리했습니다. 컴포넌트 재사용과 CSS Modules를 적용해 유지보수성을 고려했습니다.</p>
                         </div>
                     </li>
-                    <li class="project__item">
+                    <li class="project__item" data-type="front-end">
                         <img class="project__img" src="images/sync.png" alt="싱크 프로젝트">
                         <div class="project__metadata">
                             <h3 class="project__metadata__title">Sync</h3>
@@ -188,7 +188,7 @@
                         </div>
                     </li>
                     
-                    <li class="project__item">
+                    <li class="project__item" data-type="front-end">
                         <img class="project__img" src="images/brunch.png" alt="브런치 프로젝트">
                         <div class="project__metadata">
                             <h3 class="project__metadata__title">Brunch</h3>
@@ -204,7 +204,7 @@
                         사용자가 게시글을 작성·조회·수정·삭제하고 프로필을 관리할 수 있도록 JavaScript와 TypeScript를 활용해 DOM 기반 UI와 CRUD 기능을 구현했습니다.</p>
                         </div>
                     </li>
-                    <li class="project__item">
+                    <li class="project__item" data-type="front-end">
                         <img class="project__img" src="images/weather.png" alt="날씨 프로젝트">
                         <div class="project__metadata">
                             <h3 class="project__metadata__title">Weather webapp</h3>
@@ -219,7 +219,7 @@
                             <p style="display: none;">개인프로젝트로 사용자 입력을 기반으로 외부 API 데이터를 비동기로 요청하고, 로딩·성공·에러 상태를 분리해 안정적인 사용자 경험을 제공하도록 구현했습니다. 또한 컴포넌트 분리와 상태 관리 구조를 통해 유지보수성과 확장성을 고려했습니다.</p>
                         </div>
                     </li>
-                    <li class="project__item">
+                    <li class="project__item" data-type="back-end">
                         <img class="project__img" src="images/dasin.png" alt="다신샵 프로젝트">
                         <div class="project__metadata">
                             <h3 class="project__metadata__title">dasin shop</h3>
