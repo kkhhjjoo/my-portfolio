@@ -19,8 +19,15 @@ document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
 
-
-
+//top화살표 사라졌다가 나오기
+const arrow = document.querySelector('.arrow-up')
+document.addEventListener('scroll', () => {
+    if (scrollY > homeHeight/2) {
+        arrow.style.opacity = 1
+    } else {
+        arrow.style.opacity = 0
+    }
+});
 
 
 // 프로젝트 모달
