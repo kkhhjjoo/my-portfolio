@@ -12,6 +12,17 @@ document.addEventListener('scroll', () => {
     }
 });
 
+//홈 섹션을 아래로 스크롤시 투명하게 처리함
+const home = document.querySelector('.home__container');
+const homeHeight = home.offsetHeight;
+document.addEventListener('scroll', () => {
+    home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+
+
+
+
 // 프로젝트 모달
 const projects = document.querySelector('.projects');
 const modal = document.querySelector('.project-modal');
