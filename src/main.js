@@ -29,6 +29,19 @@ document.addEventListener('scroll', () => {
     }
 });
 
+//navbar 토글 버튼 클릭
+const navbarMenu = document.querySelector('.header__menu');
+const navbarToggle = document.querySelector('.header__toggle')
+
+navbarToggle.addEventListener('click', () => {
+    navbarMenu.classList.toggle('open');
+});
+
+//navbar 메뉴 클릭시 메뉴를 자동으로 닫아줌
+navbarMenu.addEventListener('click', () => {
+    navbarMenu.classList.remove('open');
+});
+
 
 // 프로젝트 모달
 const projects = document.querySelector('.projects');
