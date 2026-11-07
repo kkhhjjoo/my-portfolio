@@ -17,12 +17,15 @@
      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <!-- Font Awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- Typeit -->
+     <script src="https://unpkg.com/typeit@8.8.7/dist/index.umd.js"></script>
     <!-- CSS연결 -->
      <link rel="stylesheet" href="css/style.css">
      <!-- JavaScript -->
       <script type="module" src="src/main.js" defer></script>
       <script type="module" src="src/projects.js" defer></script>
       <script type="module" src="src/active_menu.js" defer></script>
+      <script type="module" src="src/type.js" defer></script>
     </head>
 <body>
     <!-- Header -->
@@ -47,9 +50,11 @@
         <section id="home" class="section">
             <div class="home__container">
                 <img class="home__avatar" src="images/profile.jpg" alt="현주의 프로필">
-                <h2 class="home__title">Hello<br /> I&#39;m <strong class="home__title--strong">programmer</strong></h2>
-                <p class="home__description">꿈꾸는 개발자입니다.</p>
-                <a class="home__contact" href="#contact">Contact Me</a>
+                <div class="home__elements">
+                    <h2 class="home__title">Hello<br /> I&#39;m <strong class="home__title--strong">dream programmer</strong></h2>
+                    <p class="home__description">끈기있게 노력하는 개발자입니다.</p>
+                    <a class="home__contact" href="#contact">Contact Me</a>
+                </div>
             </div>
         </section>
         <!-- About -->
